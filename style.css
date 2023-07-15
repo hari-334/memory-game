@@ -1,0 +1,85 @@
+@font-face {
+    font-family: flame;
+    src: url(FLAMER.TTF);
+}
+h1{
+    font-family: flame;
+    color: rgb(99, 26, 26);
+    font-size: 75px;
+    text-align: center;
+}
+
+.gameContainer {
+   /* display: flex;
+    flex-wrap: wrap;*/
+    display: grid;
+    grid-template: repeat(4,1fr) / repeat(4,1fr);
+    width: 320px;
+    margin-bottom: 20px;
+    align-items: center;
+}
+body{
+    background-color: black;
+}
+
+.outerBorder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cards {
+    width: 75px;
+    height: 75px;
+    margin: 5px;
+    background-color: rgba(127, 36, 3, 0.719);
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.detailsContainer {
+    margin-bottom: 10px;
+}
+
+.btnContainer {
+    margin-bottom: 10px;
+}
+.btnContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+button {
+    margin-right: 10px;
+    font-size: 35px;
+    text-align: center;
+}
+
+.backgroundVideo {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+.scoreDiv {
+    color: white;
+    font-size: 25px;
+}
+.timerDiv {
+    color: white;
+    font-size: 25px;
+}
+.highScoreDiv {
+    color: white;
+    font-size: 25px;
+}
+.message {
+    color: white;
+    font-size: 40px;
+    text-align: center;
+}

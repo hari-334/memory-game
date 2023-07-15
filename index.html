@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Memory Game</title>
+</head>
+<body>
+    <h1 class="gameTitle">Memory Game..!!</h1>
+    <video autoplay loop plays-inline muted class="backgroundVideo">
+        <source src="background.mp4" type="video/mp4">
+    </video>
+    <div class="detailsContainer">
+        <div class="scoreDiv">Score: <span class="score">0</span></div>
+        <br>
+        <div class="timerDiv">Timer: <span class="timer">60</span></div>
+    </div>
+    <div class="outerBorder">
+        <div class="gameContainer"></div>
+
+    </div>
+    
+
+    
+
+    <div class="displayContainer">
+        <div class="message"></div>
+    </div>
+
+    <div class="btnContainer">
+        <button class="startBtn">Start</button>
+        <br><br>
+        <button class="resetBtn">Restart</button>
+    </div>
+    <script src="game.js"></script>
+
+</body>
+</html>
